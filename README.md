@@ -19,7 +19,7 @@ Project from The Odin Project Intermediate HTML and CSS course. Project page fou
 
 1. [ ] Taking it one section at a time, begin nesting child elements under the parent elements in the HTML. Remember that you can keep making grid containers within grid containers.
     1. [X] Create nested elements for header
-    2. [ ] Create nested elements for sidebar
+    2. [X] Create nested elements for sidebar
     3. [ ] Create nested elements for main content
 2. [ ] In the sidebar, use more grids to lay out the navigation and branding sections.
 3. [ ] In the header, use more grids to lay out the search bar, user info and buttons.
