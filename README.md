@@ -9,3 +9,8 @@ Project from The Odin Project Intermediate HTML and CSS course. Project page fou
 1. [X] Create github repo and clone it
 2. [X] Create html and css files with some dummy content to verify they are connected and working as intended.
 3. [X] Download full res copy of the [project design file](https://cdn.statically.io/gh/TheOdinProject/curriculum/43cc6ab69fdfbef40d431a65677d2144668930ac/intermediate_html_css/grid/project_admin_dashboard/imgs/dashboard-project.png) as a reference.
+
+## Step 2: Layout
+
+1. [X] Start by writing out the HTML elements for the sidebar, header and main-content containers.
+2. [X] In your CSS file, apply Grid properties until you have this basic layout built.
