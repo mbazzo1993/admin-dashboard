@@ -14,3 +14,14 @@ Project from The Odin Project Intermediate HTML and CSS course. Project page fou
 
 1. [X] Start by writing out the HTML elements for the sidebar, header and main-content containers.
 2. [X] In your CSS file, apply Grid properties until you have this basic layout built.
+
+## Step 3: Nesting
+
+1. [ ] Taking it one section at a time, begin nesting child elements under the parent elements in the HTML. Remember that you can keep making grid containers within grid containers.
+    1. [X] Create nested elements for header
+    2. [ ] Create nested elements for sidebar
+    3. [ ] Create nested elements for main content
+2. [ ] In the sidebar, use more grids to lay out the navigation and branding sections.
+3. [ ] In the header, use more grids to lay out the search bar, user info and buttons.
+4. [ ] For the main-content, use more grids to lay out the projects, announcements and trending items.
+5. [ ] Fill out some dummy content and placeholder images so you can position all of your grid items.

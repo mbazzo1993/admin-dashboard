@@ -1,19 +1,19 @@
 /* START: for visualization purposes */
-.header {
-    background-color: white;
-    border-color: blue;
+.search-wrapper {
+
 }
 
-.main-content {
-    background-color: grey;
-    border-color: blue;
-}
+.menu-wrapper {
 
-.sidebar {
-    background-color: blue;
-    border-color: white;
 }
 /* END: for visualization purposes */
+
+:root {
+    --brand-blue: rgb(68,145,207)	;
+    --brand-grey: rgb(227	232	239	) ;
+    --brand-white: white;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -34,14 +34,17 @@ body {
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    background-color: var(--brand-white);
 }
 
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    background-color: var(--brand-blue);
 }
 
 .main-content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    background-color: var(--brand-grey);
 }
