@@ -11,8 +11,10 @@
 :root {
     --brand-blue: rgb(68,145,207)	;
     --brand-grey: rgb(227	232	239	) ;
-    --brand-black: black;
     --brand-white: white;
+
+    /* Control-esque styling colors */
+    --brand-black: black;
     --form-valid-color: rgb(87,191,161);
     --form-invalid-color: red;
 }
@@ -36,13 +38,137 @@ body {
     width: 100%;
 }
 
+/* START: Header styling  */
+
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: var(--brand-white);
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    padding-bottom: 10px;
 }
 
-/* All sidebard styling */
+.search-wrapper {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+
+}
+
+.search-wrapper > img {
+    height: 25px;
+    width: 25px;
+    justify-self: end;
+    align-self: center;
+}
+
+.search-wrapper > input {
+    justify-self: center;
+    width: 95%;
+    background-color: var(--brand-grey);
+    font-size: 16px;
+    height: 25px;
+    border-style: none;
+    border-radius: 10px;
+    padding-left: 0.5em;
+}
+
+.user-info-wrapper {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    column-gap: 10px;
+}
+
+.user-info-wrapper > img {
+    align-self: center;
+}
+
+.user-info-wrapper > img[alt="bell-icon"] {
+    height: 25px;
+    width: 25px;
+}
+
+.user-info-wrapper > img[alt="user-icon"] {
+    height: 50px;
+    width: 50px;
+}
+
+.user-info-wrapper > div {
+    font-weight: bold;
+    font-size: 16px;
+    align-self: center;
+    justify-self: center;
+}
+
+.hi-there-wrapper {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 10px;
+}
+
+.hi-there-wrapper > img {
+    grid-column: 1 / 2;
+    height: 80px;
+    width: 80px;
+    align-self: center;
+    justify-self: end;
+}
+
+.hi-there-wrapper > div {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: start;
+}
+
+.hi-there-wrapper > div > div:first-child {
+    font-size: small;
+    font-weight: bold;
+}
+
+.hi-there-wrapper > div > div:last-child {
+    margin-top: -10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.menu-wrapper {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.menu-wrapper > button {
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: var(--brand-blue);
+    color: var(--brand-white);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* END: Header styling  */
+
+/* START: Sidebar styling  */
 
 .sidebar {
     display: flex;
@@ -106,6 +232,8 @@ body {
     height: 25px;
     width: 25px;
 }
+
+/* END: Sidebar styling  */
 
 .main-content {
     grid-column: 2 / 3;

@@ -22,6 +22,6 @@ Project from The Odin Project Intermediate HTML and CSS course. Project page fou
     2. [X] Create nested elements for sidebar
     3. [X] Create nested elements for main content
 2. [X] In the sidebar, use more grids to lay out the navigation and branding sections.
-3. [ ] In the header, use more grids to lay out the search bar, user info and buttons.
+3. [X] In the header, use more grids to lay out the search bar, user info and buttons.
 4. [ ] For the main content, use more grids to lay out the projects, announcements and trending items.
 5. [ ] Fill out some dummy content and placeholder images so you can position all of your grid items.
