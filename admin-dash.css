@@ -12,11 +12,6 @@
     --brand-blue: rgb(68,145,207)	;
     --brand-grey: rgb(227	232	239	) ;
     --brand-white: white;
-
-    /* Control-esque styling colors */
-    --brand-black: black;
-    --form-valid-color: rgb(87,191,161);
-    --form-invalid-color: red;
 }
 
 body {
@@ -244,10 +239,10 @@ body {
     padding: 50px;
 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.75fr 1fr;
     column-gap: 20px;
     grid-template-rows: 1fr 1fr;
-    box-shadow: 0px 5px 5px rgb(167, 167, 167) inset;
+    box-shadow: 0px 5px 5px rgb(195, 194, 194) inset;
 }
 
 .main-content > .projects-wrapper {
@@ -277,12 +272,13 @@ body {
 
 .project-card {
     background-color: var(--brand-white);
-    border-radius: 5px;
+    border-radius: 10px;
     border-left: 10px solid rgb(231	182	74	);
     padding: 15px;
+    box-shadow: 0px 5px 5px rgb(195, 194, 194);
 
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
 }
 
 .project-card > .title {
@@ -298,8 +294,9 @@ body {
 }
 
 .icons > img {
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: auto;
+    margin-left: 20px
 }
 
 .section-title {
@@ -309,18 +306,55 @@ body {
     justify-self: start;
 }
 
-
-
 .main-content > .announcements-wrapper {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-rows: 1fr 7fr;
 }
 
 .main-content > .trending-wrapper {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-rows: 1fr 7fr;
 }
 
+.announcements-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 
+    background-color: var(--brand-white);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 5px rgb(195, 194, 194);
+
+}
+
+.announcements-card > .announcement:first-child {
+    border-bottom: 1px solid rgb(157, 157, 157);
+}
+
+.announcements-card > .announcement:last-child {
+    border-top: 1px solid rgb(157, 157, 157);
+}
+
+.announcement {
+    padding: 10px;
+}
+
+.announcement > .title {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.announcement > .desc {
+    font-size: small;
+    color: rgb(95, 94, 94);
+}
 
 /* END: Main content styling  */
