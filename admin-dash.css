@@ -322,7 +322,8 @@ body {
     grid-template-rows: 1fr 7fr;
 }
 
-.announcements-card {
+.announcements-card,
+.trending-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,6 +356,37 @@ body {
 .announcement > .desc {
     font-size: small;
     color: rgb(95, 94, 94);
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending-item > img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: center;
+
+    height: 65px;
+    width: auto;
+}
+
+.trending-item > .username {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: end;
+    justify-self: start;
+}
+
+.trending-item > .project-name {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: start;
+    justify-self: start;
+    color: rgb(128, 127, 127);
 }
 
 /* END: Main content styling  */
